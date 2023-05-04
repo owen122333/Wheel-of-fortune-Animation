@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46430339-1C46-4D6C-801A-28D60F83398A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Wheel_of_fortune_Animation.My.MyApplication</StartupObject>
+    <RootNamespace>Wheel_of_fortune_Animation</RootNamespace>
+    <AssemblyName>Wheel of fortune Animation</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Wheel of fortune Animation.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Wheel of fortune Animation.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guessword.Designer.vb">
+      <DependentUpon>guessword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="guessword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guessword.resx">
+      <DependentUpon>guessword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r 4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
