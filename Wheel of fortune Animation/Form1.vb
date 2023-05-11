@@ -12,8 +12,8 @@ Public Class Form1
     Dim tinterval As Integer
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRandomize.Click
         'Randomize Button and Activate Timer 
-        Randomvalue = Int((25 * Rnd()) + 1) * 3
         lblwinmoney.Text = "You win : "
+        Randomvalue = Int((25 * Rnd()) + 1) * 3
         lblrnadomizednumeral.Text = Randomvalue.ToString
         Timer1.Enabled = True
 
@@ -342,6 +342,12 @@ Public Class Form1
     End Sub
 
     Private Sub picbox2_Click(sender As Object, e As EventArgs) Handles picbox2.Click
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        guessword.Show()
+        Me.Hide()
 
     End Sub
 End Class
